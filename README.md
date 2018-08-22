@@ -31,6 +31,3 @@
 
 
 
-We can click the “Erase all” button to erase the firmware which had been programed into our RAK8212 module before, and it doesn’t matter that we start to program without erasing the old firmware. Now, let’s program the firmware: Click the “Browse” button and select the firmware file which is a .hex file; image
-
-Click the “program” button to start; image
