@@ -20,7 +20,11 @@
 4. Debug
 
    A demo task has been supplied for test below:
+   
    4.1 collect sensors data per 10s    
+   
    4.2 get gps data per 10s (data is valid only in open space)
+   
    4.3 send data to server via NB-IOT per 10s (please contact your NB-IOT operator)
+   
    Considering to the ram and dominant frequency(32kHz), new task size should not be large and the num of tasks should be as less as good.
