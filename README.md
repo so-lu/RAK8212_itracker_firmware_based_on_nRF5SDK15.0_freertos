@@ -12,7 +12,9 @@
 3. Version
 
    nRF52832 SDK:15.0.0
+   
    SoftDevice  :6.0.0
+   
    FreeRTOS    :10.0.0
    
 4. Debug
