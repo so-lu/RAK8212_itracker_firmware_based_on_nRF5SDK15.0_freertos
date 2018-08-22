@@ -5,13 +5,16 @@
 
    Find project path:
    ..\RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos\src\nRF5_SDK_15.0.0_a53641a\itracker\ble_peripheral\itracker\pca10040\s132\arm5_no_packs
+   
    Do not need any setting and compile drectly.
+   
    Before download to your board,please ensure the SoftDevice has been programing via nRFgo-studio.
 3. Version
 
    nRF52832 SDK:15.0.0
    SoftDevice  :6.0.0
    FreeRTOS    :10.0.0
+   
 4. Debug
 
    A demo task has been supplied for test below:
