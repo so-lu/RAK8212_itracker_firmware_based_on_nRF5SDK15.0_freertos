@@ -9,7 +9,7 @@
     
 2. Code and client
 
-    The code is for cient, our moudle provide gps location info and sensor collect like below.In this project, sensor data and gps data update per 15s, then send to server via BG96.
+    The code is for client, our moudle provide gps location info and sensor collect like below.In this project, sensor data and gps data update per 15s, then send to server via BG96.
     
     Arduino Compatible – Host controller NRF52832 has been widely used in Arduino environment
 
@@ -42,7 +42,7 @@
 4. Test environment 
 
     We use NB-IOT simcard provided by China Telecom, and you could contact your operator.
-    ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180827102455.jpg)
+    ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/20180827102455.jpg)
 
 
 PS:
