@@ -79,6 +79,14 @@ PS:
    4.3 send data to server via NB-IOT (please contact your NB-IOT operator)
    
    Considering to the ram and dominant frequency(32kHz), new task size should not be large and the num of tasks should be as less as good.
+   
+   4.4 use J-link RTT Viewer to watch client running log like below:
+   
+   ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/20180827122232.png)
+ 
+ 
+   ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/20180827122253.jpg)
+   
 
 
 
