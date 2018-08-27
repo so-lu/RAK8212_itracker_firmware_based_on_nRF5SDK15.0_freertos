@@ -3,7 +3,7 @@
    This project is RAK8212 itracker firmware based on freertos and nRF52832 SDK 15.0.0, and perform a typical scence for sending and recieving data via NB-IOT. The internet is NB-IOT here, and the RAK8212 could be as the client or server. We use RAK8212 to be as a client and WisLTE as a server(details is in http://www.rakwireless.com/en/download/Cellular/WisLTE). Shown as below 
    
    
-   ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20180827115712.png)
+   ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/20180827115712.png)
     
 
     
@@ -30,12 +30,12 @@
 
     
    Client connection(gps data is valid only outside building): 
-    ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180827102432.jpg)
+    ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/20180827102432.jpg)
 
 3. Server command 
 
     Server is WisLTE moudle, which could be connected to PC and send AT commmand via usb by serial port, like below:
-    ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180827102445.jpg)
+    ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/20180827102445.jpg)
     The command may be different for different net operator, so every command detail could be seen on https://www.quectel.com/product/bg96.htm 
     
 4. Test environment 
