@@ -1,0 +1,26 @@
+
+
+//server AT command, you can contact us and your NB-IOT operator when config:
+
+AT+CFUN?
+AT+QNWINFO
+AT+QCFG="nwscanmode",3,1
+AT+QCFG="IOTOPMODE"
+AT+QCFG="BAND"
+AT+QCFG="NWSCANSEQ"
+AT+COPS=? //search net may cost 100s 
+AT+COPS?
+AT+QENG="SERVINGCELL"
+AT+CGACT?
+AT+CGPADDR=1
+AT+CSQ
+AT+CGREG?
+AT+QIOPEN=1,1,"TCP LISTENER","127.0.0.1",0,2020,0  // as a tcp sever
+
+//when a client connect, show below:
++QIURC: "incoming",11,1,"172.31.242.222",54091 //Accept a TCP connection, <service_type> is
+“TCP incoming”, and <connectID> is 11.
+//when a message recieve,show below:
++QIURC: “recv”,11 
+//use command below query message:
+AT+QIRD=11
