@@ -38,7 +38,7 @@
     ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/20180827102445.jpg)
     The command may be different for different net operator, so every command detail could be seen on https://www.quectel.com/product/bg96.htm 
     
-    WisLTE details is in http://www.rakwireless.com/en/download/Cellular/WisLTE)
+    WisLTE details is in http://www.rakwireless.com/en/download/Cellular/WisLTE
     
 4. Test environment 
 
