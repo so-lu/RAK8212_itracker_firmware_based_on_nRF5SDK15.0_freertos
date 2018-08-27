@@ -1,8 +1,7 @@
 1. Overview
 
    This project is RAK8212 itracker firmware based on freertos and nRF52832 SDK 15.0.0, and perform a typical scence for sneding and recieving data via NB-IOT. The internet is NB-IOT here, and the RAK8212 could be the client and server. We use RAK8212 as a client and WisLTE as a server(details is in http://www.rakwireless.com/en/download/Cellular/WisLTE). Shown as below 
-
-![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/u%3D231888999%2C414631646%26fm%3D27%26gp%3D0.jpg)
+   ![](https://github.com/RAKWireless/RAK8212_itracker_firmware_based_on_nRF5SDK15.0_freertos/blob/master/u%3D231888999%2C414631646%26fm%3D27%26gp%3D0.jpg)
     
 
     
