@@ -4,7 +4,7 @@ UPDATE:2018.9.28
 
 The update of this version includes below:
 
-1. Add dfu feature of long-distance via NB-IOT or 4G/3G/2G. We test on GSM with China Mobile, you should use your operator. Here the 8212 moudle is as TCP Listener for recieving update bin file, and remote server is as a client to send cmd and file. Must use the Transparent Access Mode of BG96.
+1. Add dfu feature of long-distance via NB-IOT or 4G/3G/2G. We test on GSM with China Mobile, you should use your operator. Here the RAK8212 moudle is as TCP Listener for recieving update bin file, and remote server is as a client to send cmd and file. Must use the Transparent Access Mode of BG96.
 
 
 2. Integrate the dfu task in application, and provide the bootloader code for assist in dfu
@@ -29,15 +29,15 @@ The update of this version includes below:
    
    5.1 Build the tcp connect with Transparent Access Mode
    
-   5.2 Remote client send cmd ("update") to 8212
+   5.2 Remote client send cmd ("update") to RAK8212
    
-   5.3 8212 will response "please send dat file" (this is for signature verify, just ignore for this version)
+   5.3 RAK8212 will response "please send dat file" (this is for signature verify, just ignore for this version)
    
-   5.4 Remote client cmd("bin") to 8212, and 8212 enter recieve bin file mode 
+   5.4 Remote client cmd("bin") to RAK8212, and 8212 enter recieve bin file mode 
    
    5.5 Remote client wait for at least 30s and begin send bin file 
    
-   5.6 8212 recieve bin 1500 byte/packet and when complete, it will reset from boot
+   5.6 RAK8212 recieve bin 1500 byte/packet and when complete, it will reset from boot
    
    5.7 Your new firmware will successfully run.
    
