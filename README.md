@@ -1,3 +1,48 @@
+UPDATE:2018.9.28
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The update of this version includes below:
+
+1. Add dfu feature of long-distance via NB-IOT or 4G/3G/2G. We test on GSM with China Mobile, you should use your operator. Here the 8212 moudle is as TCP Listener for recieving update bin file, and remote server is as a client to send cmd and file. Must use the Transparent Access Mode of BG96.
+
+
+2. Integrate the dfu task in application, and provide the bootloader code for assist in dfu
+
+3. Use the dual_bank type dfu of nRF52832, and the app firmware is about 87k now. So the max size of your firmware is better less than 120k
+
+4. You should do some preparatory work when develop your firmware below:
+
+   4.1 Generate bootloader setting and download to the flash at 0x7F000 (with the firmware you want to update) with nrfutil
+   
+   4.2 When you compile and can get the hex file of firmware, so generate the bin file and dat file with nrfutil
+   
+   4.3 Because the signature is debuging now, the code just support update directly.
+   
+   4.4 RTT Viewer is used for displaying log, and if speed is fast ,it will halt. But don't worry, check your program whether is running normally or not.
+   
+   The guide of use nrfutil of nordic is below: 
+   
+   https://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.tools%2Fdita%2Ftools%2Ftools.html
+
+5. DFU PROCESS
+   
+   5.1 Build the tcp connect with Transparent Access Mode
+   
+   5.2 Remote client send cmd ("update") to 8212
+   
+   5.3 8212 will response "please send dat file" (this is for signature verify, just ignore for this version)
+   
+   5.4 Remote client cmd("bin") to 8212, and 8212 enter recieve bin file mode 
+   
+   5.5 Remote client wait for at least 30s and begin send bin file 
+   
+   5.6 8212 recieve bin 1500 byte/packet and when complete, it will reset from boot
+   
+   5.7 Your new firmware will successfully run.
+   
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 UPDATE:2018.8.31
 
