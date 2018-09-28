@@ -1,3 +1,24 @@
+
+UPDATE:2018.8.31
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+The update of this version includes below:
+
+1. open NRF log to debug expediently
+
+2. add a BLE demo task. if want to test, please download the nrf connect app to your phone from below:
+
+https://www.nordicsemi.com/eng/Products/Nordic-mobile-Apps/nRF-Connect-for-Mobile
+
+3. the nodic ble advertising is really different from ohters. First, it advertise in fast mode, when time-out,to slow mode.If no connect, 
+enter idle mode and deep sleep mode to save power. When wake up,it will lead to a reset...... so consider the situation when creat your ble task.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 1. Overview
 
    This project is RAK8212 itracker firmware based on freertos and nRF52832 SDK 15.0.0, and perform a typical scence for sending and recieving data via NB-IOT. The internet is NB-IOT here, and the RAK8212 could be as the client or server. We use RAK8212 to be as a client and WisLTE as a server. Shown as below 
